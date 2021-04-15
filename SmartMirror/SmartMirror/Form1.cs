@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;                       //dyrektywy (wszystkie przestrzenie nazw których używamy) 
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +14,19 @@ namespace SmartMirror
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();  // wyołanie designera okna 
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            timer.Start();
         }
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            lblGodzina.Text = ;
+        }
+
     }
+    
 }
