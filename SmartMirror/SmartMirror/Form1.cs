@@ -22,11 +22,17 @@ namespace SmartMirror
         {
             timer.Start();
         }
+
         private void timer_Tick(object sender, EventArgs e)
         {
-            lblGodzina.Text = ;
+            //lblGodzina.Text = DateTime.Now.ToString("HH:mm");
+            
+            DataiGodzna aktualna = new DataiGodzna();   //Konstruktor obiektu
+            
+            lblGodzina.Text = aktualna.DajCzas();
+            lblData.Text = aktualna.DajDate();
         }
-
+                
     }
     
 }
