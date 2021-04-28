@@ -24,13 +24,15 @@ namespace SmartMirror
         }
 
         private void timer_Tick(object sender, EventArgs e)
-        {
-            //lblGodzina.Text = DateTime.Now.ToString("HH:mm");
-            
+        {           
             DataiGodzna aktualna = new DataiGodzna();   //Konstruktor obiektu
             
             lblGodzina.Text = aktualna.DajCzas();
             lblData.Text = aktualna.DajDate();
+
+            Pogoda aktualnaT = new Pogoda();
+
+            lblTemp.Text = aktualnaT.getWeather();
         }
                 
     }

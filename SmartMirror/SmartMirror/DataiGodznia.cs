@@ -6,16 +6,16 @@ namespace SmartMirror
 {
     public class DataiGodzna        //Obiekt odpowiedzialny za godzinę i datę 
     {
-        private String Godzina;
-        private String Minuta;
-        public String Czas;
+        private string Godzina;
+        private string Minuta;
+        public string Czas;
 
-        private String Dzien;
-        private String Miesiac;
-        private String Rok;
-        public String Data;
+        private string Dzien;
+        private string Miesiac;
+        private string Rok;
+        public string Data;
 
-        public String DajCzas()     //Metoda tworzącza godzinę 
+        public string DajCzas()     //Metoda tworzącza godzinę 
         {
             Godzina = DateTime.Now.ToString("HH");
             Minuta = DateTime.Now.ToString("mm");
@@ -23,7 +23,7 @@ namespace SmartMirror
             return Czas;
         }
 
-        public String DajDate()     //Metoda tworząca datę 
+        public string DajDate()     //Metoda tworząca datę 
         {
             Dzien = DateTime.Now.ToString("dd");
             Miesiac = DateTime.Now.ToString("MMMM");

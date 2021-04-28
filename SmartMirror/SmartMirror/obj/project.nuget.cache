@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Bnn9+AFpXR+Mx/QR91F3QZq0d/M8hzk56QLxCq3E2tgjkbp1uFP2RLk/p4F/EsmzdfmgZsFRL7jbuiq+NkanVw==",
+  "dgSpecHash": "bGHvuzI6b8iqg83R4lt1+LS9wrFU8DnF0hqU5Tph2IMcIEV6NndS9jScDGtvCc6U/FB7uFBQgYH40Q/fUaYTwg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DESKTOP-12\\Desktop\\PO\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DESKTOP-12\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
