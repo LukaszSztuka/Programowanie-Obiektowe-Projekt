@@ -35,6 +35,9 @@ namespace SmartMirror
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.lblData = new System.Windows.Forms.Label();
             this.lblTemp = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblGodzina
@@ -73,17 +76,30 @@ namespace SmartMirror
             this.lblTemp.BackColor = System.Drawing.Color.Transparent;
             this.lblTemp.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTemp.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblTemp.Location = new System.Drawing.Point(1250, 40);
+            this.lblTemp.Location = new System.Drawing.Point(1130, 40);
             this.lblTemp.Name = "lblTemp";
             this.lblTemp.Size = new System.Drawing.Size(109, 54);
             this.lblTemp.TabIndex = 2;
             this.lblTemp.Text = "15*C";
+            this.toolTip1.SetToolTip(this.lblTemp, "Aktualna odczuwalna temperatura");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::SmartMirror.Properties.Resources.icon1;
+            this.pictureBox1.Location = new System.Drawing.Point(1146, 97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1382, 450);
+            this.ClientSize = new System.Drawing.Size(1262, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblGodzina);
@@ -94,10 +110,13 @@ namespace SmartMirror
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+
 
         #endregion
 
@@ -105,6 +124,8 @@ namespace SmartMirror
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Label lblTemp;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

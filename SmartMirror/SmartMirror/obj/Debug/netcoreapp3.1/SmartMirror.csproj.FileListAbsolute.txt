@@ -15,3 +15,5 @@ C:\Users\DESKTOP-12\Desktop\PO\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\S
 C:\Users\DESKTOP-12\Desktop\PO\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.genruntimeconfig.cache
 C:\Users\DESKTOP-12\Desktop\PO\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\DESKTOP-12\Desktop\PO\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CopyComplete
+C:\Users\DESKTOP-12\Desktop\PO\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Form2.resources
+C:\Users\DESKTOP-12\Desktop\PO\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Properties.Resources.resources
