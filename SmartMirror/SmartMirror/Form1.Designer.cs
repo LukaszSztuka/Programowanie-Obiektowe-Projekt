@@ -98,7 +98,7 @@ namespace SmartMirror
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1262, 450);
+            this.ClientSize = new System.Drawing.Size(1262, 616);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.lblData);

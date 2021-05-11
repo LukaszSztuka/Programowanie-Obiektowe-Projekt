@@ -48,19 +48,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DESKTOP-12\\.nuget\\packages\\": {}
+    "C:\\Users\\Kuba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DESKTOP-12\\Desktop\\PO\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+      "projectUniqueName": "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
       "projectName": "SmartMirror",
-      "projectPath": "C:\\Users\\DESKTOP-12\\Desktop\\PO\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
-      "packagesPath": "C:\\Users\\DESKTOP-12\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DESKTOP-12\\Desktop\\PO\\SmartMirror\\SmartMirror\\obj\\",
+      "projectPath": "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+      "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DESKTOP-12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -109,7 +109,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

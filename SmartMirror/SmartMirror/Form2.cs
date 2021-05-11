@@ -18,7 +18,8 @@ namespace SmartMirror
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            IpLokalizacja lokalizacja = new IpLokalizacja();
+            textBox1.Text = lokalizacja.getMiasto();
         }
               
 
@@ -37,6 +38,11 @@ namespace SmartMirror
                 MessageBox.Show("Nie wpisałeś nazwy miasta!", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

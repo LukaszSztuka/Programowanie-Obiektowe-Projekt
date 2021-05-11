@@ -53,7 +53,7 @@ namespace SmartMirror
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(45, 65);
+            this.button1.Location = new System.Drawing.Point(45, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 28);
             this.button1.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace SmartMirror
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(198, 114);
+            this.ClientSize = new System.Drawing.Size(198, 182);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
