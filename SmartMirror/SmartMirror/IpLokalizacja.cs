@@ -14,21 +14,21 @@ namespace SmartMirror
     {
         public string getMiasto()
         {
-            string ipAddress = getIP();
-            string strReturnVal;
-            string ipResponse = getIPRequest("http://ip-api.com/xml/" + ipAddress);
+            string ipAdres = getIP();
+            string Miasto;
+            string output = getIPRequest("http://ip-api.com/xml/" + ipAdres);
 
             XmlDocument ipInfoXML = new XmlDocument();
-            ipInfoXML.LoadXml(ipResponse);
+            ipInfoXML.LoadXml(output);
             XmlNodeList responseXML = ipInfoXML.GetElementsByTagName("query");
 
             NameValueCollection dataXML = new NameValueCollection();
 
             dataXML.Add(responseXML.Item(0).ChildNodes[5].InnerText, responseXML.Item(0).ChildNodes[4].Value);
 
-            strReturnVal = responseXML.Item(0).ChildNodes[5].InnerText.ToString(); // 5 element XML - miasto
+            Miasto = responseXML.Item(0).ChildNodes[5].InnerText.ToString(); // 5 element XML - miasto
 
-            return strReturnVal;
+            return Miasto;
         }
 
         public string getIPRequest(string url)
