@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace SmartMirror
 {
@@ -22,10 +23,32 @@ namespace SmartMirror
         string NazwaObrazkaLok;
         
 
-        public Form1(string NazwaMiastaUzytkownika)
+        public Form1(string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
         {
             InitializeComponent();  // wyołanie designera okna 
             NazwaMiastaLok = NazwaMiastaUzytkownika;
+
+            //Form2 Ustawienia = new Form2();
+            //Ustawienia.CheckboxChanged += ustawienia_CheckboxChanged;
+
+            //Form2 Settings = new Form2();
+            //Settings.CheckboxChanged += settings_CheckboxChanged;
+
+            if (!UstawieniaCheckBox[0])
+            {
+                pogodaTemp.Visible = false;
+                pogodaIcon.Visible = false;
+            }
+
+            if (!UstawieniaCheckBox[1])
+            {
+                zegarLabel.Visible = false;
+            }
+
+            if (!UstawieniaCheckBox[2])
+            {
+                dataLabel.Visible = false;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -37,49 +60,77 @@ namespace SmartMirror
         {           
             DataiGodzna aktualna = new DataiGodzna();   //Konstruktor obiektu
             
-            lblGodzina.Text = aktualna.DajCzas();
-            lblData.Text = aktualna.DajDate();
+            zegarLabel.Text = aktualna.DajCzas();
+            dataLabel.Text = aktualna.DajDate();
 
             Pogoda aktualnaT = new Pogoda();           
-            lblTemp.Text = aktualnaT.getWeather(NazwaMiastaLok);
+            pogodaTemp.Text = aktualnaT.getWeather(NazwaMiastaLok);
 
             NazwaObrazkaLok = aktualnaT.ZmianaIkony(NazwaMiastaLok);    //Zwraca nazwe obrazka aktualnej pogody
 
-            if (NazwaObrazkaLok.Equals(KopiaNazwaObrazka1))                        //Ustawia obrazek aktualnej pogoidy 
+            if (NazwaObrazkaLok.Equals(KopiaNazwaObrazka1)) //Ustawia obrazek aktualnej pogoidy 
             {
-                pictureBox1.Image = Properties.Resources.icon1;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pogodaIcon.Image = Properties.Resources.icon1;
+                pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
 
             }
             else if (NazwaObrazkaLok.Equals(KopiaNazwaObrazka5))
             {
-                pictureBox1.Image = Properties.Resources.icon5;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pogodaIcon.Image = Properties.Resources.icon5;
+                pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             else if (NazwaObrazkaLok.Equals(KopiaNazwaObrazka2))
             {
-                pictureBox1.Image = Properties.Resources.icon2;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pogodaIcon.Image = Properties.Resources.icon2;
+                pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             else if (NazwaObrazkaLok.Equals(KopiaNazwaObrazka3))
             {
-                pictureBox1.Image = Properties.Resources.icon3;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pogodaIcon.Image = Properties.Resources.icon3;
+                pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             else if (NazwaObrazkaLok.Equals(KopiaNazwaObrazka4))
             {
-                pictureBox1.Image = Properties.Resources.icon4;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pogodaIcon.Image = Properties.Resources.icon4;
+                pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             else
             {
-                pictureBox1.Image = Properties.Resources.icon0;
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pogodaIcon.Image = Properties.Resources.icon0;
+                pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
         }
+        public void checkbox1_checkedChanged(object sender, CheckEventArgs2 e)
+        {
+            //test = e.pogodaChecked;
+            MessageBox.Show("test", "test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Debug.WriteLine(e.pogodaChecked);
+            if (e.pogodaChecked)
+            {
+                //pogodaTemp.ForeColor = Color.FromArgb(255, 255, 255);
+                MessageBox.Show("test", "test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            } else
+            {
+                MessageBox.Show("xxx", "xxx", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
-        
+        public void settings_CheckboxChanged(object sender, CheckEventArgs e)
+        {
+            //checkBox1.Checked = CheckEventArgs.Checked;
+            //System.Diagnostics.Debug.WriteLine(CheckEventArgs.Checked);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void czasLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-using System.Web;
 using System.Net;
 using System.IO;
 using System.Xml;
@@ -48,19 +44,19 @@ namespace SmartMirror
 
         public string getIP()
         {
-            String address = "";
+            String adres = "";
             WebRequest request = WebRequest.Create("http://checkip.dyndns.org/");
             using (WebResponse response = request.GetResponse())
             using (StreamReader stream = new StreamReader(response.GetResponseStream()))
             {
-                address = stream.ReadToEnd();
+                adres = stream.ReadToEnd();
             }
 
-            int first = address.IndexOf("Address: ") + 9;
-            int last = address.LastIndexOf("</body>");
-            address = address.Substring(first, last - first);
+            int first = adres.IndexOf("Address: ") + 9;
+            int last = adres.LastIndexOf("</body>");
+            adres = adres.Substring(first, last - first);
 
-            return address;
+            return adres;
         }
 
     }

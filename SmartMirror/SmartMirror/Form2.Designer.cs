@@ -31,44 +31,89 @@ namespace SmartMirror
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.miastoTextBox = new System.Windows.Forms.TextBox();
+            this.zatwierdzButton = new System.Windows.Forms.Button();
+            this.pogodaCheckBox = new System.Windows.Forms.CheckBox();
+            this.zegarCheckBox = new System.Windows.Forms.CheckBox();
+            this.dataCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 9);
+            this.label1.Location = new System.Drawing.Point(45, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Podaj nazwę miasta:";
             // 
-            // textBox1
+            // miastoTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(113, 23);
-            this.textBox1.TabIndex = 1;
+            this.miastoTextBox.Location = new System.Drawing.Point(44, 60);
+            this.miastoTextBox.Name = "miastoTextBox";
+            this.miastoTextBox.Size = new System.Drawing.Size(113, 23);
+            this.miastoTextBox.TabIndex = 1;
+            this.miastoTextBox.TextChanged += new System.EventHandler(this.miastoTextBox_TextChanged);
             // 
-            // button1
+            // zatwierdzButton
             // 
-            this.button1.Location = new System.Drawing.Point(45, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Zatwierdź";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.zatwierdzButton.Enabled = false;
+            this.zatwierdzButton.Location = new System.Drawing.Point(45, 104);
+            this.zatwierdzButton.Name = "zatwierdzButton";
+            this.zatwierdzButton.Size = new System.Drawing.Size(113, 28);
+            this.zatwierdzButton.TabIndex = 2;
+            this.zatwierdzButton.Text = "Zatwierdź";
+            this.zatwierdzButton.UseVisualStyleBackColor = true;
+            this.zatwierdzButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pogodaCheckBox
+            // 
+            this.pogodaCheckBox.AutoSize = true;
+            this.pogodaCheckBox.Checked = true;
+            this.pogodaCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.pogodaCheckBox.Location = new System.Drawing.Point(201, 29);
+            this.pogodaCheckBox.Name = "pogodaCheckBox";
+            this.pogodaCheckBox.Size = new System.Drawing.Size(67, 19);
+            this.pogodaCheckBox.TabIndex = 3;
+            this.pogodaCheckBox.Text = "Pogoda";
+            this.pogodaCheckBox.UseVisualStyleBackColor = true;
+            this.pogodaCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // zegarCheckBox
+            // 
+            this.zegarCheckBox.AutoSize = true;
+            this.zegarCheckBox.Checked = true;
+            this.zegarCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.zegarCheckBox.Location = new System.Drawing.Point(201, 64);
+            this.zegarCheckBox.Name = "zegarCheckBox";
+            this.zegarCheckBox.Size = new System.Drawing.Size(56, 19);
+            this.zegarCheckBox.TabIndex = 4;
+            this.zegarCheckBox.Text = "Zegar";
+            this.zegarCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // dataCheckBox
+            // 
+            this.dataCheckBox.AutoSize = true;
+            this.dataCheckBox.Checked = true;
+            this.dataCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.dataCheckBox.Location = new System.Drawing.Point(201, 104);
+            this.dataCheckBox.Name = "dataCheckBox";
+            this.dataCheckBox.Size = new System.Drawing.Size(50, 19);
+            this.dataCheckBox.TabIndex = 5;
+            this.dataCheckBox.Text = "Data";
+            this.dataCheckBox.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(198, 182);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(341, 158);
+            this.Controls.Add(this.dataCheckBox);
+            this.Controls.Add(this.zegarCheckBox);
+            this.Controls.Add(this.pogodaCheckBox);
+            this.Controls.Add(this.zatwierdzButton);
+            this.Controls.Add(this.miastoTextBox);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -86,7 +131,10 @@ namespace SmartMirror
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox miastoTextBox;
+        private System.Windows.Forms.Button zatwierdzButton;
+        private System.Windows.Forms.CheckBox zegarCheckBox;
+        private System.Windows.Forms.CheckBox dataCheckBox;
+        public System.Windows.Forms.CheckBox pogodaCheckBox;
     }
 }
