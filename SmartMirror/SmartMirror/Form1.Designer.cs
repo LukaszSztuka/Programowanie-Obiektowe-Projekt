@@ -55,7 +55,6 @@ namespace SmartMirror
             this.zegarLabel.Size = new System.Drawing.Size(315, 142);
             this.zegarLabel.TabIndex = 0;
             this.zegarLabel.Text = "22:22";
-            this.zegarLabel.Click += new System.EventHandler(this.czasLabel_Click);
             // 
             // timer
             // 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartMirror
 {
-    class WeatherInfo
+    class PogodaAktualna
     {
         public class weather
         {

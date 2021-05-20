@@ -28,12 +28,6 @@ namespace SmartMirror
             InitializeComponent();  // wyołanie designera okna 
             NazwaMiastaLok = NazwaMiastaUzytkownika;
 
-            //Form2 Ustawienia = new Form2();
-            //Ustawienia.CheckboxChanged += ustawienia_CheckboxChanged;
-
-            //Form2 Settings = new Form2();
-            //Settings.CheckboxChanged += settings_CheckboxChanged;
-
             if (!UstawieniaCheckBox[0])
             {
                 pogodaTemp.Visible = false;
@@ -42,10 +36,16 @@ namespace SmartMirror
 
             if (!UstawieniaCheckBox[1])
             {
-                zegarLabel.Visible = false;
+                pogodaTemp2.Visible = false;
+                pogodaIcon2.Visible = false;
             }
 
             if (!UstawieniaCheckBox[2])
+            {
+                zegarLabel.Visible = false;
+            }
+
+            if (!UstawieniaCheckBox[3])
             {
                 dataLabel.Visible = false;
             }
@@ -64,8 +64,8 @@ namespace SmartMirror
             dataLabel.Text = aktualna.DajDate();
 
             Pogoda aktualnaT = new Pogoda();           
-            pogodaTemp.Text = aktualnaT.getWeather(NazwaMiastaLok);
-            pogodaTemp2.Text = aktualnaT.getWeatherForcast(NazwaMiastaLok);
+            pogodaTemp.Text = aktualnaT.getTempAkt(NazwaMiastaLok);
+            pogodaTemp2.Text = aktualnaT.getTempProg(NazwaMiastaLok);
 
             NazwaObrazkaLok = aktualnaT.ZmianaIkony(NazwaMiastaLok);    //Zwraca nazwe obrazka aktualnej pogody
 
@@ -101,7 +101,9 @@ namespace SmartMirror
                 pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
+
             NazwaObrazkaLok2 = aktualnaT.ZmianaIkony2(NazwaMiastaLok);    //Zwraca nazwe obrazka przyszłej pogody
+
             if (NazwaObrazkaLok2.Equals(KopiaNazwaObrazka1)) //Ustawia obrazek przyszłej pogoidy 
             {
                 pogodaIcon2.Image = Properties.Resources.icon1;
@@ -133,37 +135,7 @@ namespace SmartMirror
                 pogodaIcon2.Image = Properties.Resources.icon0;
                 pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-        }
-        public void checkbox1_checkedChanged(object sender, CheckEventArgs2 e)
-        {
-            //test = e.pogodaChecked;
-            MessageBox.Show("test", "test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            Debug.WriteLine(e.pogodaChecked);
-            if (e.pogodaChecked)
-            {
-                //pogodaTemp.ForeColor = Color.FromArgb(255, 255, 255);
-                MessageBox.Show("test", "test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            } else
-            {
-                MessageBox.Show("xxx", "xxx", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        public void settings_CheckboxChanged(object sender, CheckEventArgs e)
-        {
-            //checkBox1.Checked = CheckEventArgs.Checked;
-            //System.Diagnostics.Debug.WriteLine(CheckEventArgs.Checked);
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void czasLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+        }        
     }
     
 }

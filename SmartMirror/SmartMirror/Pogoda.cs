@@ -16,11 +16,10 @@ namespace SmartMirror
     {
         const string APPID = "846aad33c8c01e7f1baae5e467b7c21f";
         public string Temp;
-        public string Temp2;
         public string NazwaObrazka;
                
 
-        public string getWeather(string NazwaMiasta)
+        public string getTempAkt(string NazwaMiasta)
         {
             using(WebClient web = new WebClient())
             {
@@ -28,16 +27,16 @@ namespace SmartMirror
 
                 var json = web.DownloadString(url);
 
-                var dSerial = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
+                var dSerial = JsonConvert.DeserializeObject<PogodaAktualna.root>(json);
 
-                WeatherInfo.root dane = dSerial;
+                PogodaAktualna.root dane = dSerial;
 
                 Temp = string.Format("{0} \u00B0" + "C", Math.Round(dane.main.feels_like));   //\u00B0 = stopień 
                 return Temp;
             }
             
         }
-        public string getWeatherForcast(string NazwaMiasta)
+        public string getTempProg(string NazwaMiasta)
         {
             using (WebClient web = new WebClient())
             {
@@ -45,12 +44,12 @@ namespace SmartMirror
 
                 var json2 = web.DownloadString(url2);
 
-                var dSerial2 = JsonConvert.DeserializeObject<WeatherForcast.data>(json2);
+                var dSerial2 = JsonConvert.DeserializeObject<PogodaPrognozowana.dane>(json2);
 
-                WeatherForcast.data dane2 = dSerial2;
+                PogodaPrognozowana.dane dane2 = dSerial2;
 
-                Temp2 = string.Format("{0} \u00B0" + "C", Math.Round(dane2.list[8].main.temp));   //\u00B0 = stopień 
-                return Temp2;
+                Temp = string.Format("{0} \u00B0" + "C", Math.Round(dane2.list[8].main.temp));   //\u00B0 = stopień 
+                return Temp;
             }
 
         }
@@ -60,8 +59,8 @@ namespace SmartMirror
             {
                 string url = string.Format("http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric&cnt=6", NazwaMiasta, APPID);
                 var json = web.DownloadString(url);
-                var dSerial3 = JsonConvert.DeserializeObject<WeatherInfo.root>(json);
-                WeatherInfo.root dane3 = dSerial3;
+                var dSerial3 = JsonConvert.DeserializeObject<PogodaAktualna.root>(json);
+                PogodaAktualna.root dane3 = dSerial3;
 
                 if (string.Format("{0}", dane3.weather[0].icon) == string.Format("01d"))//słoneczko
                 {
@@ -98,8 +97,8 @@ namespace SmartMirror
             {
                 string url = string.Format("http://api.openweathermap.org/data/2.5/forecast?q={0}&mode=json&appid={1}&units=metric", NazwaMiasta, APPID);
                 var json = web.DownloadString(url);
-                var dSerial4 = JsonConvert.DeserializeObject<WeatherForcast.data>(json);
-                WeatherForcast.data dane4 = dSerial4;
+                var dSerial4 = JsonConvert.DeserializeObject<PogodaPrognozowana.dane>(json);
+                PogodaPrognozowana.dane dane4 = dSerial4;
 
                 if (string.Format("{0}", dane4.list[8].weather[0].icon) == string.Format("01d"))//słoneczko
                 {

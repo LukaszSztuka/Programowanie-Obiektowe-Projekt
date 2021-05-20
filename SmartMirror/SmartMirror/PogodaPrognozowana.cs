@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SmartMirror
 {
-    class WeatherForcast
+    class PogodaPrognozowana
     {
-        public class data
+        public class dane
         {
             public List<list> list { get; set; }    // 8 - odpowiada przewidywanej pogodzie za 24 godziny
             public city city { get; set; }

@@ -36,6 +36,7 @@ namespace SmartMirror
             this.pogodaCheckBox = new System.Windows.Forms.CheckBox();
             this.zegarCheckBox = new System.Windows.Forms.CheckBox();
             this.dataCheckBox = new System.Windows.Forms.CheckBox();
+            this.pogodaProgCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,14 +78,13 @@ namespace SmartMirror
             this.pogodaCheckBox.TabIndex = 3;
             this.pogodaCheckBox.Text = "Pogoda";
             this.pogodaCheckBox.UseVisualStyleBackColor = true;
-            this.pogodaCheckBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // zegarCheckBox
             // 
             this.zegarCheckBox.AutoSize = true;
             this.zegarCheckBox.Checked = true;
             this.zegarCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.zegarCheckBox.Location = new System.Drawing.Point(201, 64);
+            this.zegarCheckBox.Location = new System.Drawing.Point(201, 79);
             this.zegarCheckBox.Name = "zegarCheckBox";
             this.zegarCheckBox.Size = new System.Drawing.Size(56, 19);
             this.zegarCheckBox.TabIndex = 4;
@@ -103,12 +103,26 @@ namespace SmartMirror
             this.dataCheckBox.Text = "Data";
             this.dataCheckBox.UseVisualStyleBackColor = true;
             // 
+            // pogodaProgCheckBox
+            // 
+            this.pogodaProgCheckBox.AutoSize = true;
+            this.pogodaProgCheckBox.Checked = true;
+            this.pogodaProgCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.pogodaProgCheckBox.Location = new System.Drawing.Point(201, 54);
+            this.pogodaProgCheckBox.Name = "pogodaProgCheckBox";
+            this.pogodaProgCheckBox.Size = new System.Drawing.Size(120, 19);
+            this.pogodaProgCheckBox.TabIndex = 6;
+            this.pogodaProgCheckBox.Text = "Pogoda prognoza";
+            this.pogodaProgCheckBox.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
+            this.AcceptButton = this.zatwierdzButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(341, 158);
+            this.ClientSize = new System.Drawing.Size(341, 166);
+            this.Controls.Add(this.pogodaProgCheckBox);
             this.Controls.Add(this.dataCheckBox);
             this.Controls.Add(this.zegarCheckBox);
             this.Controls.Add(this.pogodaCheckBox);
@@ -136,5 +150,6 @@ namespace SmartMirror
         private System.Windows.Forms.CheckBox zegarCheckBox;
         private System.Windows.Forms.CheckBox dataCheckBox;
         public System.Windows.Forms.CheckBox pogodaCheckBox;
+        public System.Windows.Forms.CheckBox pogodaProgCheckBox;
     }
 }
