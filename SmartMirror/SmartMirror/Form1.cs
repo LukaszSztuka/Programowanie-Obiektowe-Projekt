@@ -21,7 +21,7 @@ namespace SmartMirror
         string KopiaNazwaObrazka4 = "icon4";
         string KopiaNazwaObrazka5 = "icon5";
         string NazwaObrazkaLok;
-        
+        string NazwaObrazkaLok2;
 
         public Form1(string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
         {
@@ -65,6 +65,7 @@ namespace SmartMirror
 
             Pogoda aktualnaT = new Pogoda();           
             pogodaTemp.Text = aktualnaT.getWeather(NazwaMiastaLok);
+            pogodaTemp2.Text = aktualnaT.getWeatherForcast(NazwaMiastaLok);
 
             NazwaObrazkaLok = aktualnaT.ZmianaIkony(NazwaMiastaLok);    //Zwraca nazwe obrazka aktualnej pogody
 
@@ -100,6 +101,38 @@ namespace SmartMirror
                 pogodaIcon.SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
+            NazwaObrazkaLok2 = aktualnaT.ZmianaIkony2(NazwaMiastaLok);    //Zwraca nazwe obrazka przyszłej pogody
+            if (NazwaObrazkaLok2.Equals(KopiaNazwaObrazka1)) //Ustawia obrazek przyszłej pogoidy 
+            {
+                pogodaIcon2.Image = Properties.Resources.icon1;
+                pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            }
+            else if (NazwaObrazkaLok2.Equals(KopiaNazwaObrazka5))
+            {
+                pogodaIcon2.Image = Properties.Resources.icon5;
+                pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else if (NazwaObrazkaLok2.Equals(KopiaNazwaObrazka2))
+            {
+                pogodaIcon2.Image = Properties.Resources.icon2;
+                pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else if (NazwaObrazkaLok2.Equals(KopiaNazwaObrazka3))
+            {
+                pogodaIcon2.Image = Properties.Resources.icon3;
+                pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else if (NazwaObrazkaLok2.Equals(KopiaNazwaObrazka4))
+            {
+                pogodaIcon2.Image = Properties.Resources.icon4;
+                pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else
+            {
+                pogodaIcon2.Image = Properties.Resources.icon0;
+                pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
         public void checkbox1_checkedChanged(object sender, CheckEventArgs2 e)
         {

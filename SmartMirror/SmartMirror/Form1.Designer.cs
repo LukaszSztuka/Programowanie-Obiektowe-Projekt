@@ -36,8 +36,12 @@ namespace SmartMirror
             this.dataLabel = new System.Windows.Forms.Label();
             this.pogodaTemp = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pogodaTemp2 = new System.Windows.Forms.Label();
             this.pogodaIcon = new System.Windows.Forms.PictureBox();
+            this.pogodaIcon2 = new System.Windows.Forms.PictureBox();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon2)).BeginInit();
             this.SuspendLayout();
             // 
             // zegarLabel
@@ -75,31 +79,58 @@ namespace SmartMirror
             this.pogodaTemp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pogodaTemp.AutoSize = true;
             this.pogodaTemp.BackColor = System.Drawing.Color.Transparent;
-            this.pogodaTemp.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pogodaTemp.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pogodaTemp.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.pogodaTemp.Location = new System.Drawing.Point(1130, 40);
+            this.pogodaTemp.Location = new System.Drawing.Point(1120, 52);
             this.pogodaTemp.Name = "pogodaTemp";
-            this.pogodaTemp.Size = new System.Drawing.Size(109, 54);
+            this.pogodaTemp.Size = new System.Drawing.Size(126, 62);
             this.pogodaTemp.TabIndex = 2;
             this.pogodaTemp.Text = "15*C";
             this.toolTip1.SetToolTip(this.pogodaTemp, "Aktualna odczuwalna temperatura");
+            // 
+            // pogodaTemp2
+            // 
+            this.pogodaTemp2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pogodaTemp2.AutoSize = true;
+            this.pogodaTemp2.BackColor = System.Drawing.Color.Transparent;
+            this.pogodaTemp2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pogodaTemp2.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.pogodaTemp2.Location = new System.Drawing.Point(1130, 132);
+            this.pogodaTemp2.Name = "pogodaTemp2";
+            this.pogodaTemp2.Size = new System.Drawing.Size(109, 54);
+            this.pogodaTemp2.TabIndex = 4;
+            this.pogodaTemp2.Text = "15*C";
+            this.toolTip2.SetToolTip(this.pogodaTemp2, "Jutrzejsza odczuwalna temperatura");
             // 
             // pogodaIcon
             // 
             this.pogodaIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pogodaIcon.Image = global::SmartMirror.Properties.Resources.icon1;
-            this.pogodaIcon.Location = new System.Drawing.Point(1146, 97);
+            this.pogodaIcon.Location = new System.Drawing.Point(1022, 41);
             this.pogodaIcon.Name = "pogodaIcon";
-            this.pogodaIcon.Size = new System.Drawing.Size(83, 80);
+            this.pogodaIcon.Size = new System.Drawing.Size(92, 86);
             this.pogodaIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pogodaIcon.TabIndex = 3;
             this.pogodaIcon.TabStop = false;
+            // 
+            // pogodaIcon2
+            // 
+            this.pogodaIcon2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pogodaIcon2.Image = global::SmartMirror.Properties.Resources.icon1;
+            this.pogodaIcon2.Location = new System.Drawing.Point(1068, 133);
+            this.pogodaIcon2.Name = "pogodaIcon2";
+            this.pogodaIcon2.Size = new System.Drawing.Size(56, 53);
+            this.pogodaIcon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pogodaIcon2.TabIndex = 5;
+            this.pogodaIcon2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1262, 616);
+            this.Controls.Add(this.pogodaIcon2);
+            this.Controls.Add(this.pogodaTemp2);
             this.Controls.Add(this.pogodaIcon);
             this.Controls.Add(this.pogodaTemp);
             this.Controls.Add(this.dataLabel);
@@ -112,6 +143,7 @@ namespace SmartMirror
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,6 +159,9 @@ namespace SmartMirror
         private System.Windows.Forms.Label pogodaTemp;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.PictureBox pogodaIcon;
+        private System.Windows.Forms.Label pogodaTemp2;
+        private System.Windows.Forms.PictureBox pogodaIcon2;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
 
