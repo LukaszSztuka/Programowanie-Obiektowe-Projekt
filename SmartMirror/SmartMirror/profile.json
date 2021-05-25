@@ -1,0 +1,29 @@
+﻿{
+	"1": {
+		"nazwa": "Test",
+		"login": "test@test.pl",
+		"haslo": "testtest",
+		"pogoda": 1,
+		"pogodaProg": 1,
+		"zegar": 1,
+		"data": 0
+	},
+	"2": {
+		"nazwa": "Test2",
+		"login": "test@test.pl",
+		"haslo": "testtest",
+		"pogoda": 1,
+		"pogodaProg": 1,
+		"zegar": 0,
+		"data": 1
+	},
+	"3": {
+		"nazwa": "Test3",
+		"login": "test@test.pl",
+		"haslo": "testtest",
+		"pogoda": 0,
+		"pogodaProg": 1,
+		"zegar": 0,
+		"data": 1
+	}
+}

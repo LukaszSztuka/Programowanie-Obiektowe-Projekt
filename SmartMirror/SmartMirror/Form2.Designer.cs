@@ -37,20 +37,23 @@ namespace SmartMirror
             this.zegarCheckBox = new System.Windows.Forms.CheckBox();
             this.dataCheckBox = new System.Windows.Forms.CheckBox();
             this.pogodaProgCheckBox = new System.Windows.Forms.CheckBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 29);
+            this.label1.Location = new System.Drawing.Point(45, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Podaj nazwę miasta:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // miastoTextBox
             // 
-            this.miastoTextBox.Location = new System.Drawing.Point(44, 60);
+            this.miastoTextBox.Location = new System.Drawing.Point(45, 190);
             this.miastoTextBox.Name = "miastoTextBox";
             this.miastoTextBox.Size = new System.Drawing.Size(113, 23);
             this.miastoTextBox.TabIndex = 1;
@@ -59,7 +62,7 @@ namespace SmartMirror
             // zatwierdzButton
             // 
             this.zatwierdzButton.Enabled = false;
-            this.zatwierdzButton.Location = new System.Drawing.Point(45, 104);
+            this.zatwierdzButton.Location = new System.Drawing.Point(45, 231);
             this.zatwierdzButton.Name = "zatwierdzButton";
             this.zatwierdzButton.Size = new System.Drawing.Size(113, 28);
             this.zatwierdzButton.TabIndex = 2;
@@ -115,13 +118,34 @@ namespace SmartMirror
             this.pogodaProgCheckBox.Text = "Pogoda prognoza";
             this.pogodaProgCheckBox.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(45, 34);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 64);
+            this.listBox1.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(46, 104);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 28);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Wybierz";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AcceptButton = this.zatwierdzButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(341, 166);
+            this.ClientSize = new System.Drawing.Size(341, 291);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pogodaProgCheckBox);
             this.Controls.Add(this.dataCheckBox);
             this.Controls.Add(this.zegarCheckBox);
@@ -151,5 +175,7 @@ namespace SmartMirror
         private System.Windows.Forms.CheckBox dataCheckBox;
         public System.Windows.Forms.CheckBox pogodaCheckBox;
         public System.Windows.Forms.CheckBox pogodaProgCheckBox;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
