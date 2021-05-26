@@ -38,7 +38,7 @@ namespace SmartMirror
             this.dataCheckBox = new System.Windows.Forms.CheckBox();
             this.pogodaProgCheckBox = new System.Windows.Forms.CheckBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -122,20 +122,21 @@ namespace SmartMirror
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(45, 34);
+            this.listBox1.Location = new System.Drawing.Point(45, 54);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 64);
             this.listBox1.TabIndex = 7;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // button1
+            // label2
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(46, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 28);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Wybierz";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(45, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 15);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Wybierz profil:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form2
             // 
@@ -144,7 +145,7 @@ namespace SmartMirror
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(341, 291);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pogodaProgCheckBox);
             this.Controls.Add(this.dataCheckBox);
@@ -176,6 +177,6 @@ namespace SmartMirror
         public System.Windows.Forms.CheckBox pogodaCheckBox;
         public System.Windows.Forms.CheckBox pogodaProgCheckBox;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }

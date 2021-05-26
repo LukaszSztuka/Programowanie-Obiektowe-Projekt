@@ -26,7 +26,7 @@ namespace SmartMirror
             IpLokalizacja lokalizacja = new IpLokalizacja();
             miastoTextBox.Text = lokalizacja.getMiasto();
 
-             List<Profil> profile = new List<Profil>();
+            List<Profil> profile = new List<Profil>();
             string plik = File.ReadAllText("profile.json");
 
             profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
@@ -35,7 +35,6 @@ namespace SmartMirror
 
             foreach (Profil p in profile)
             {
-                System.Diagnostics.Debug.WriteLine(p.pogoda);
                 listBox1.Items.Add(p);
             }
         }
@@ -56,7 +55,9 @@ namespace SmartMirror
             this.Close();
 
         }
-                
+
+
+
         private void miastoTextBox_TextChanged(object sender, EventArgs e)
         {
             if (miastoTextBox.Text.Length > 0)
@@ -66,6 +67,28 @@ namespace SmartMirror
             else
             {
                 zatwierdzButton.Enabled = false;
+            } 
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex > -1)
+            {
+                List<Profil> profile = new List<Profil>();
+                string plik = File.ReadAllText("profile.json");
+
+                profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
+
+                int idProfil = listBox1.Items.IndexOf(listBox1.SelectedItem);
+                //System.Diagnostics.Debug.WriteLine(profile[idProfil].pogoda);
+                //System.Diagnostics.Debug.WriteLine(listBox1.SelectedIndex);
+
+                pogodaCheckBox.Checked = profile[idProfil].pogoda;
+                pogodaProgCheckBox.Checked = profile[idProfil].pogodaProg;
+                zegarCheckBox.Checked = profile[idProfil].zegar;
+                dataCheckBox.Checked = profile[idProfil].data;
+                Invalidate();
+                Update();
             }
         }
 
@@ -77,6 +100,30 @@ namespace SmartMirror
       
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wybierzButtonClick(object sender, EventArgs e)
+        {
+            List<Profil> profile = new List<Profil>();
+            string plik = File.ReadAllText("profile.json");
+
+            profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
+
+            int idProfil = listBox1.Items.IndexOf(listBox1.SelectedItem);
+            System.Diagnostics.Debug.WriteLine(profile[idProfil].pogoda);
+            System.Diagnostics.Debug.WriteLine(listBox1.SelectedIndex);
+
+            pogodaCheckBox.Checked = profile[idProfil].pogoda;
+            pogodaProgCheckBox.Checked = profile[idProfil].pogodaProg;
+            zegarCheckBox.Checked = profile[idProfil].zegar;
+            dataCheckBox.Checked = profile[idProfil].data;
+            pogodaCheckBox.Invalidate();
+            pogodaCheckBox.Update();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

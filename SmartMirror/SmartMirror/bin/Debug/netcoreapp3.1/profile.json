@@ -15,9 +15,9 @@
 		"login": "test2@test.pl",
 		"haslo": "testtest",
 		"pogoda": true,
-		"pogodaProg": true,
+		"pogodaProg": false,
 		"zegar": true,
-		"data": true
+		"data": false
 	},
 	{
 		"id":3,
@@ -26,7 +26,7 @@
 		"haslo": "testtest",
 		"pogoda": true,
 		"pogodaProg": true,
-		"zegar": true,
+		"zegar": false,
 		"data": true
 	},
 	{
@@ -34,7 +34,7 @@
 		"nazwa": "Test4",
 		"login": "test2@test.pl",
 		"haslo": "testtest",
-		"pogoda": true,
+		"pogoda": false,
 		"pogodaProg": true,
 		"zegar": true,
 		"data": true
