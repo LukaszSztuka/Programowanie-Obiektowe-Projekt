@@ -1,7 +1,7 @@
 ﻿
 namespace SmartMirror
 {
-    partial class Form1
+    partial class SmartMirrorApp
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,7 @@ namespace SmartMirror
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SmartMirrorApp));
             this.zegarLabel = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.dataLabel = new System.Windows.Forms.Label();

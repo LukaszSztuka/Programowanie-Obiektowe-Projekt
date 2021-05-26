@@ -11,10 +11,10 @@ using Newtonsoft.Json;
 
 namespace SmartMirror
 {
-    public partial class Form2 : Form
+    public partial class Ustawienia : Form
     {
         
-        public Form2()
+        public Ustawienia()
         {
             InitializeComponent();
 
@@ -45,7 +45,7 @@ namespace SmartMirror
             string Nazwa = miastoTextBox.Text;
             //System.Diagnostics.Debug.WriteLine(pogodaCheckBox.Checked);
 
-            Form1 form1 = new Form1(Nazwa, new bool[]{
+            SmartMirrorApp form1 = new SmartMirrorApp(Nazwa, new bool[]{
                 pogodaCheckBox.Checked,
                 pogodaProgCheckBox.Checked,
                 zegarCheckBox.Checked,
@@ -112,8 +112,8 @@ namespace SmartMirror
             profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
 
             int idProfil = listBox1.Items.IndexOf(listBox1.SelectedItem);
-            System.Diagnostics.Debug.WriteLine(profile[idProfil].pogoda);
-            System.Diagnostics.Debug.WriteLine(listBox1.SelectedIndex);
+            //System.Diagnostics.Debug.WriteLine(profile[idProfil].pogoda);
+            //System.Diagnostics.Debug.WriteLine(listBox1.SelectedIndex);
 
             pogodaCheckBox.Checked = profile[idProfil].pogoda;
             pogodaProgCheckBox.Checked = profile[idProfil].pogodaProg;
@@ -126,6 +126,29 @@ namespace SmartMirror
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DodajProfil dodajForm = new DodajProfil();
+            dodajForm.FormClosed += new FormClosedEventHandler(DodajProfil_FormClosed);
+            dodajForm.ShowDialog();
+        }
+
+        private void DodajProfil_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            List<Profil> profile = new List<Profil>();
+            string plik = File.ReadAllText("profile.json");
+
+            profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
+            System.Diagnostics.Debug.WriteLine(profile);
+
+            listBox1.Items.Clear();
+
+            foreach (Profil p in profile)
+            {
+                listBox1.Items.Add(p);
+            }
         }
     }
 }

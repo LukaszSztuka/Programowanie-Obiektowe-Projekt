@@ -63,8 +63,6 @@ C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\bin\D
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.pdb
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csprojAssemblyReference.cache
-C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Form1.resources
-C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Form2.resources
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Properties.Resources.resources
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.GenerateResource.cache
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfoInputs.cache
@@ -74,3 +72,6 @@ C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\D
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.dll
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.pdb
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.genruntimeconfig.cache
+C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.DodajProfil.resources
+C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.SmartMirrorApp.resources
+C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Ustawienia.resources

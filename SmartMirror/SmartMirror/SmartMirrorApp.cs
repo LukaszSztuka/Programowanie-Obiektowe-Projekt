@@ -11,7 +11,7 @@ using System.Diagnostics;
 
 namespace SmartMirror
 {
-    public partial class Form1 : Form
+    public partial class SmartMirrorApp : Form
     {
         public string NazwaMiastaLok;   // Zmienna przechowywująca nazwę miasta na potrzeby tego obiektu
 
@@ -23,7 +23,7 @@ namespace SmartMirror
         string NazwaObrazkaLok;
         string NazwaObrazkaLok2;
 
-        public Form1(string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
+        public SmartMirrorApp(string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
         {
             InitializeComponent();  // wyołanie designera okna 
             NazwaMiastaLok = NazwaMiastaUzytkownika;
