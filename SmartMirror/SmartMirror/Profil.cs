@@ -19,7 +19,7 @@ namespace SmartMirror
 
         public override string ToString()
         {
-            return id.ToString() + ":" + nazwa.ToString();
+            return nazwa.ToString();
         }
     }
 }

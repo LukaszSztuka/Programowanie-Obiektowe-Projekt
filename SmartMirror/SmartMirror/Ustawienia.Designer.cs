@@ -39,13 +39,14 @@ namespace SmartMirror
             this.pogodaProgCheckBox = new System.Windows.Forms.CheckBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dodajButton = new System.Windows.Forms.Button();
+            this.usunButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 172);
+            this.label1.Location = new System.Drawing.Point(111, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 15);
             this.label1.TabIndex = 0;
@@ -54,7 +55,7 @@ namespace SmartMirror
             // 
             // miastoTextBox
             // 
-            this.miastoTextBox.Location = new System.Drawing.Point(45, 190);
+            this.miastoTextBox.Location = new System.Drawing.Point(111, 206);
             this.miastoTextBox.Name = "miastoTextBox";
             this.miastoTextBox.Size = new System.Drawing.Size(120, 23);
             this.miastoTextBox.TabIndex = 1;
@@ -63,7 +64,7 @@ namespace SmartMirror
             // zatwierdzButton
             // 
             this.zatwierdzButton.Enabled = false;
-            this.zatwierdzButton.Location = new System.Drawing.Point(45, 219);
+            this.zatwierdzButton.Location = new System.Drawing.Point(111, 251);
             this.zatwierdzButton.Name = "zatwierdzButton";
             this.zatwierdzButton.Size = new System.Drawing.Size(120, 28);
             this.zatwierdzButton.TabIndex = 2;
@@ -76,7 +77,7 @@ namespace SmartMirror
             this.pogodaCheckBox.AutoSize = true;
             this.pogodaCheckBox.Checked = true;
             this.pogodaCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.pogodaCheckBox.Location = new System.Drawing.Point(201, 29);
+            this.pogodaCheckBox.Location = new System.Drawing.Point(209, 52);
             this.pogodaCheckBox.Name = "pogodaCheckBox";
             this.pogodaCheckBox.Size = new System.Drawing.Size(67, 19);
             this.pogodaCheckBox.TabIndex = 3;
@@ -88,7 +89,7 @@ namespace SmartMirror
             this.zegarCheckBox.AutoSize = true;
             this.zegarCheckBox.Checked = true;
             this.zegarCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.zegarCheckBox.Location = new System.Drawing.Point(201, 79);
+            this.zegarCheckBox.Location = new System.Drawing.Point(209, 102);
             this.zegarCheckBox.Name = "zegarCheckBox";
             this.zegarCheckBox.Size = new System.Drawing.Size(56, 19);
             this.zegarCheckBox.TabIndex = 4;
@@ -100,7 +101,7 @@ namespace SmartMirror
             this.dataCheckBox.AutoSize = true;
             this.dataCheckBox.Checked = true;
             this.dataCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.dataCheckBox.Location = new System.Drawing.Point(201, 104);
+            this.dataCheckBox.Location = new System.Drawing.Point(209, 127);
             this.dataCheckBox.Name = "dataCheckBox";
             this.dataCheckBox.Size = new System.Drawing.Size(50, 19);
             this.dataCheckBox.TabIndex = 5;
@@ -112,7 +113,7 @@ namespace SmartMirror
             this.pogodaProgCheckBox.AutoSize = true;
             this.pogodaProgCheckBox.Checked = true;
             this.pogodaProgCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.pogodaProgCheckBox.Location = new System.Drawing.Point(201, 54);
+            this.pogodaProgCheckBox.Location = new System.Drawing.Point(209, 77);
             this.pogodaProgCheckBox.Name = "pogodaProgCheckBox";
             this.pogodaProgCheckBox.Size = new System.Drawing.Size(120, 19);
             this.pogodaProgCheckBox.TabIndex = 6;
@@ -125,7 +126,7 @@ namespace SmartMirror
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(45, 54);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 64);
+            this.listBox1.Size = new System.Drawing.Size(138, 64);
             this.listBox1.TabIndex = 7;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -139,15 +140,25 @@ namespace SmartMirror
             this.label2.Text = "Wybierz profil:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button1
+            // dodajButton
             // 
-            this.button1.Location = new System.Drawing.Point(45, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Dodaj profil";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.dodajButton.Location = new System.Drawing.Point(45, 124);
+            this.dodajButton.Name = "dodajButton";
+            this.dodajButton.Size = new System.Drawing.Size(60, 23);
+            this.dodajButton.TabIndex = 9;
+            this.dodajButton.Text = "Dodaj";
+            this.dodajButton.UseVisualStyleBackColor = true;
+            this.dodajButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // usunButton
+            // 
+            this.usunButton.Location = new System.Drawing.Point(123, 124);
+            this.usunButton.Name = "usunButton";
+            this.usunButton.Size = new System.Drawing.Size(60, 23);
+            this.usunButton.TabIndex = 10;
+            this.usunButton.Text = "Usuń";
+            this.usunButton.UseVisualStyleBackColor = true;
+            this.usunButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usunButtonClick);
             // 
             // Ustawienia
             // 
@@ -156,7 +167,8 @@ namespace SmartMirror
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(341, 291);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.usunButton);
+            this.Controls.Add(this.dodajButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pogodaProgCheckBox);
@@ -190,6 +202,7 @@ namespace SmartMirror
         public System.Windows.Forms.CheckBox pogodaProgCheckBox;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button dodajButton;
+        private System.Windows.Forms.Button usunButton;
     }
 }

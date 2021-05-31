@@ -30,7 +30,7 @@ namespace SmartMirror
             string plik = File.ReadAllText("profile.json");
 
             profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
-            System.Diagnostics.Debug.WriteLine(profile);
+            //System.Diagnostics.Debug.WriteLine(profile);
 
 
             foreach (Profil p in profile)
@@ -141,13 +141,37 @@ namespace SmartMirror
             string plik = File.ReadAllText("profile.json");
 
             profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
-            System.Diagnostics.Debug.WriteLine(profile);
+            //System.Diagnostics.Debug.WriteLine(profile);
 
             listBox1.Items.Clear();
 
             foreach (Profil p in profile)
             {
                 listBox1.Items.Add(p);
+            }
+        }
+
+        private void usunButtonClick(object sender, MouseEventArgs e)
+        {
+            string profilName = listBox1.SelectedItem.ToString();
+            DialogResult dialogResult = MessageBox.Show("Czy napewno chcesz usunąć profil " + profilName + " ?", "Usuń profil" , MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                List<Profil> profile = new List<Profil>();
+                string plik = File.ReadAllText("profile.json");
+
+                profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
+                profile.RemoveAt(listBox1.Items.IndexOf(listBox1.SelectedItem));
+
+                plik = JsonConvert.SerializeObject(profile);
+                File.WriteAllText("profile.json", plik);
+
+                listBox1.Items.Clear();
+
+                foreach (Profil p in profile)
+                {
+                    listBox1.Items.Add(p);
+                }
             }
         }
     }
