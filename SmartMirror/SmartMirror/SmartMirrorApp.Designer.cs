@@ -50,11 +50,11 @@ namespace SmartMirror
             // 
             this.zegarLabel.AutoSize = true;
             this.zegarLabel.BackColor = System.Drawing.Color.Transparent;
-            this.zegarLabel.Font = new System.Drawing.Font("Segoe UI", 80F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.zegarLabel.Font = new System.Drawing.Font("Segoe UI", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.zegarLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.zegarLabel.Location = new System.Drawing.Point(12, 9);
+            this.zegarLabel.Location = new System.Drawing.Point(3, 59);
             this.zegarLabel.Name = "zegarLabel";
-            this.zegarLabel.Size = new System.Drawing.Size(315, 142);
+            this.zegarLabel.Size = new System.Drawing.Size(392, 177);
             this.zegarLabel.TabIndex = 0;
             this.zegarLabel.Text = "22:22";
             // 
@@ -67,13 +67,13 @@ namespace SmartMirror
             // 
             this.dataLabel.AutoSize = true;
             this.dataLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dataLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataLabel.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dataLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.dataLabel.Location = new System.Drawing.Point(34, 132);
+            this.dataLabel.Location = new System.Drawing.Point(36, 33);
             this.dataLabel.Name = "dataLabel";
-            this.dataLabel.Size = new System.Drawing.Size(260, 45);
+            this.dataLabel.Size = new System.Drawing.Size(467, 54);
             this.dataLabel.TabIndex = 1;
-            this.dataLabel.Text = "23 czerwiec 2021";
+            this.dataLabel.Text = "wtorek, 23 czerwiec 2021";
             // 
             // pogodaTemp
             // 
@@ -82,7 +82,7 @@ namespace SmartMirror
             this.pogodaTemp.BackColor = System.Drawing.Color.Transparent;
             this.pogodaTemp.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pogodaTemp.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.pogodaTemp.Location = new System.Drawing.Point(1120, 52);
+            this.pogodaTemp.Location = new System.Drawing.Point(1108, 44);
             this.pogodaTemp.Name = "pogodaTemp";
             this.pogodaTemp.Size = new System.Drawing.Size(126, 62);
             this.pogodaTemp.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace SmartMirror
             this.pogodaTemp2.BackColor = System.Drawing.Color.Transparent;
             this.pogodaTemp2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pogodaTemp2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.pogodaTemp2.Location = new System.Drawing.Point(1130, 132);
+            this.pogodaTemp2.Location = new System.Drawing.Point(1118, 124);
             this.pogodaTemp2.Name = "pogodaTemp2";
             this.pogodaTemp2.Size = new System.Drawing.Size(109, 54);
             this.pogodaTemp2.TabIndex = 4;
@@ -107,7 +107,7 @@ namespace SmartMirror
             // 
             this.pogodaIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pogodaIcon.Image = global::SmartMirror.Properties.Resources.icon1;
-            this.pogodaIcon.Location = new System.Drawing.Point(1022, 41);
+            this.pogodaIcon.Location = new System.Drawing.Point(1010, 33);
             this.pogodaIcon.Name = "pogodaIcon";
             this.pogodaIcon.Size = new System.Drawing.Size(92, 86);
             this.pogodaIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -118,7 +118,7 @@ namespace SmartMirror
             // 
             this.pogodaIcon2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pogodaIcon2.Image = global::SmartMirror.Properties.Resources.icon1;
-            this.pogodaIcon2.Location = new System.Drawing.Point(1068, 133);
+            this.pogodaIcon2.Location = new System.Drawing.Point(1056, 125);
             this.pogodaIcon2.Name = "pogodaIcon2";
             this.pogodaIcon2.Size = new System.Drawing.Size(56, 53);
             this.pogodaIcon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +130,7 @@ namespace SmartMirror
             this.Etykietalabel.AutoSize = true;
             this.Etykietalabel.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Etykietalabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Etykietalabel.Location = new System.Drawing.Point(35, 200);
+            this.Etykietalabel.Location = new System.Drawing.Point(26, 259);
             this.Etykietalabel.Name = "Etykietalabel";
             this.Etykietalabel.Size = new System.Drawing.Size(259, 30);
             this.Etykietalabel.TabIndex = 6;
@@ -140,11 +140,11 @@ namespace SmartMirror
             // 
             this.Eventlabel.AutoSize = true;
             this.Eventlabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Eventlabel.Location = new System.Drawing.Point(35, 239);
+            this.Eventlabel.Location = new System.Drawing.Point(26, 298);
             this.Eventlabel.Name = "Eventlabel";
-            this.Eventlabel.Size = new System.Drawing.Size(71, 30);
+            this.Eventlabel.Size = new System.Drawing.Size(128, 30);
             this.Eventlabel.TabIndex = 7;
-            this.Eventlabel.Text = "label2";
+            this.Eventlabel.Text = "Wydarzenie";
             // 
             // SmartMirrorApp
             // 
@@ -164,7 +164,7 @@ namespace SmartMirror
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SmartMirrorApp";
-            this.Text = "Nadchodzące wydarzenia";
+            this.Text = "SmartMirror";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon)).EndInit();

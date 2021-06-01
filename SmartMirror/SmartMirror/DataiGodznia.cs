@@ -11,6 +11,7 @@ namespace SmartMirror
         public string Czas;
 
         private string Dzien;
+        private string Dzien2;
         private string Miesiac;
         private string Rok;
         public string Data;
@@ -26,9 +27,10 @@ namespace SmartMirror
         public string DajDate()     //Metoda tworząca datę 
         {
             Dzien = DateTime.Now.ToString("dd");
+            Dzien2 = DateTime.Now.ToString("dddd");
             Miesiac = DateTime.Now.ToString("MMMM");
             Rok = DateTime.Now.ToString("yyyy");
-            Data = Dzien + " " + Miesiac + " " + Rok;
+            Data = Dzien2 + ", " + Dzien + " " + Miesiac + " " + Rok;
             return Data;
 
         }
