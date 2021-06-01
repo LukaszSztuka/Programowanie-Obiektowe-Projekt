@@ -75,3 +75,72 @@ C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\D
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.DodajProfil.resources
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.SmartMirrorApp.resources
 C:\Users\Kuba\Source\Repos\Programowanie-Obiektowe\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Ustawienia.resources
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.exe
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.deps.json
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.json
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.dev.json
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.dll
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.pdb
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csprojAssemblyReference.cache
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.DodajProfil.resources
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Properties.Resources.resources
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.SmartMirrorApp.resources
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Ustawienia.resources
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.GenerateResource.cache
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfoInputs.cache
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfo.cs
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CoreCompileInputs.cache
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CopyComplete
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.dll
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.pdb
+C:\Users\DESKTOP-12\Downloads\Programowanie-Obiektowe-Projekt-master (1)\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.genruntimeconfig.cache
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.exe
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.deps.json
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.json
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.dev.json
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.pdb
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Calendar.v3.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.DodajProfil.resources
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Properties.Resources.resources
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.SmartMirrorApp.resources
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Ustawienia.resources
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.GenerateResource.cache
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfoInputs.cache
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfo.cs
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CoreCompileInputs.cache
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CopyComplete
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.dll
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.pdb
+C:\Users\DESKTOP-12\Desktop\Programowanie-Obiektowe-Projekt-master\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.genruntimeconfig.cache
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.exe
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.deps.json
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.json
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.dev.json
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.pdb
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Calendar.v3.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csprojAssemblyReference.cache
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.DodajProfil.resources
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Properties.Resources.resources
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.SmartMirrorApp.resources
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Ustawienia.resources
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.GenerateResource.cache
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfoInputs.cache
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfo.cs
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CoreCompileInputs.cache
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CopyComplete
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.dll
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.pdb
+C:\Users\DESKTOP-12\Source\Repos\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.genruntimeconfig.cache

@@ -40,6 +40,8 @@ namespace SmartMirror
             this.pogodaIcon = new System.Windows.Forms.PictureBox();
             this.pogodaIcon2 = new System.Windows.Forms.PictureBox();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.Etykietalabel = new System.Windows.Forms.Label();
+            this.Eventlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon2)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +60,7 @@ namespace SmartMirror
             // 
             // timer
             // 
-            this.timer.Interval = 1000;
+            this.timer.Interval = 10000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // dataLabel
@@ -123,22 +125,46 @@ namespace SmartMirror
             this.pogodaIcon2.TabIndex = 5;
             this.pogodaIcon2.TabStop = false;
             // 
-            // Form1
+            // Etykietalabel
+            // 
+            this.Etykietalabel.AutoSize = true;
+            this.Etykietalabel.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Etykietalabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.Etykietalabel.Location = new System.Drawing.Point(35, 200);
+            this.Etykietalabel.Name = "Etykietalabel";
+            this.Etykietalabel.Size = new System.Drawing.Size(259, 30);
+            this.Etykietalabel.TabIndex = 6;
+            this.Etykietalabel.Text = "Nadchodzące wydarzenia";
+            // 
+            // Eventlabel
+            // 
+            this.Eventlabel.AutoSize = true;
+            this.Eventlabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.Eventlabel.Location = new System.Drawing.Point(35, 239);
+            this.Eventlabel.Name = "Eventlabel";
+            this.Eventlabel.Size = new System.Drawing.Size(71, 30);
+            this.Eventlabel.TabIndex = 7;
+            this.Eventlabel.Text = "label2";
+            // 
+            // SmartMirrorApp
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1262, 616);
+            this.Controls.Add(this.Eventlabel);
+            this.Controls.Add(this.Etykietalabel);
             this.Controls.Add(this.pogodaIcon2);
             this.Controls.Add(this.pogodaTemp2);
             this.Controls.Add(this.pogodaIcon);
             this.Controls.Add(this.pogodaTemp);
             this.Controls.Add(this.dataLabel);
             this.Controls.Add(this.zegarLabel);
+            this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "SmartMirrorApp";
+            this.Text = "Nadchodzące wydarzenia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pogodaIcon)).EndInit();
@@ -161,6 +187,8 @@ namespace SmartMirror
         private System.Windows.Forms.Label pogodaTemp2;
         private System.Windows.Forms.PictureBox pogodaIcon2;
         private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.Label Etykietalabel;
+        private System.Windows.Forms.Label Eventlabel;
     }
 }
 

@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Calendar.v3;
+using Google.Apis.Calendar.v3.Data;
+using Google.Apis.Services;
+using Google.Apis.Util.Store;
+using System.IO;
+using System.Threading;
 
 namespace SmartMirror
 {
@@ -26,6 +33,7 @@ namespace SmartMirror
         public SmartMirrorApp(string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
         {
             InitializeComponent();  // wyołanie designera okna 
+            GoogleApi();
             NazwaMiastaLok = NazwaMiastaUzytkownika;
 
             if (!UstawieniaCheckBox[0])
@@ -57,7 +65,8 @@ namespace SmartMirror
         }
 
         public void timer_Tick(object sender, EventArgs e)
-        {           
+        {
+            GoogleApi();
             DataiGodzna aktualna = new DataiGodzna();   //Konstruktor obiektu
             
             zegarLabel.Text = aktualna.DajCzas();
@@ -135,7 +144,60 @@ namespace SmartMirror
                 pogodaIcon2.Image = Properties.Resources.icon0;
                 pogodaIcon2.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-        }        
+        }
+
+        // If modifying these scopes, delete your previously saved credentials
+        // at ~/.credentials/calendar-dotnet-quickstart.json
+        static string[] Scopes = { CalendarService.Scope.CalendarReadonly };
+        static string ApplicationName = "SmartMirrorApp";
+
+        private void GoogleApi()
+        {
+            UserCredential credential;
+
+            using (var stream =
+                new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
+            {
+                // The file token.json stores the user's access and refresh tokens, and is created
+                // automatically when the authorization flow completes for the first time.
+                string credPath = "token.json";
+                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    GoogleClientSecrets.Load(stream).Secrets,
+                    Scopes,
+                    "user",
+                    CancellationToken.None,
+                    new FileDataStore(credPath, true)).Result;
+            }
+
+            // Create Google Calendar API service.
+            var service = new CalendarService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = ApplicationName,
+            });
+
+            // Define parameters of request.
+            EventsResource.ListRequest request = service.Events.List("primary");
+            request.TimeMin = DateTime.Now;
+            request.ShowDeleted = false;
+            request.SingleEvents = true;
+            request.MaxResults = 10;
+            request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
+
+            // List events.
+            Events events = request.Execute();
+            if (events.Items != null && events.Items.Count > 0)
+            {
+                Eventlabel.Text = "";
+                foreach (var eventItem in events.Items)
+                {
+                    Eventlabel.Text += eventItem.Summary + Environment.NewLine;
+                }
+            }
+            else
+            {
+                Eventlabel.Text = "Brak wydarzeń";
+            }
+        }
     }
-    
 }

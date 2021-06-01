@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "pUSPcn93hsh6T/1eAeURtl+jpP1xDQuPnb/AeQfhzJfLV/dofWPbpBr8TqftOfaianP9zetIjfzXDfs4vl6fcg==",
+  "dgSpecHash": "KQ1mNIZCfeiSWS1vYtztn/nne1V4RzGXWHkyvE1YvN5aUsY6Om4kYlQ0d8NFc+/0JzwkTqRmr2O2HI+Hi6ynSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+  "projectFilePath": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kuba\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\DESKTOP-12\\.nuget\\packages\\google.apis\\1.51.0\\google.apis.1.51.0.nupkg.sha512",
+    "C:\\Users\\DESKTOP-12\\.nuget\\packages\\google.apis.auth\\1.51.0\\google.apis.auth.1.51.0.nupkg.sha512",
+    "C:\\Users\\DESKTOP-12\\.nuget\\packages\\google.apis.calendar.v3\\1.51.0.2312\\google.apis.calendar.v3.1.51.0.2312.nupkg.sha512",
+    "C:\\Users\\DESKTOP-12\\.nuget\\packages\\google.apis.core\\1.51.0\\google.apis.core.1.51.0.nupkg.sha512",
+    "C:\\Users\\DESKTOP-12\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

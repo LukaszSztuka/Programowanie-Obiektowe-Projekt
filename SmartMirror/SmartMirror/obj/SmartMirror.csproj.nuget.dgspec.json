@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe\\SmartMirror\\SmartMirror\\SmartMirror.csproj": {}
+    "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe\\SmartMirror\\SmartMirror\\SmartMirror.csproj": {
+    "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+        "projectUniqueName": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
         "projectName": "SmartMirror",
-        "projectPath": "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
-        "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kuba\\Source\\Repos\\Programowanie-Obiektowe\\SmartMirror\\SmartMirror\\obj\\",
+        "projectPath": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+        "packagesPath": "C:\\Users\\DESKTOP-12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DESKTOP-12\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Google.Apis.Calendar.v3": {
+              "target": "Package",
+              "version": "[1.51.0.2312, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -63,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
