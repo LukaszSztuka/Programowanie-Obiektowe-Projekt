@@ -24,7 +24,7 @@ namespace SmartMirror
             using(WebClient web = new WebClient())
             {
                 string url = string.Format("http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric&cnt=6", NazwaMiasta, APPID);
-
+                System.Diagnostics.Debug.WriteLine(url);
                 var json = web.DownloadString(url);
 
                 var dSerial = JsonConvert.DeserializeObject<PogodaAktualna.root>(json);
@@ -34,7 +34,7 @@ namespace SmartMirror
                 Temp = string.Format("{0} \u00B0" + "C", Math.Round(dane.main.feels_like));   //\u00B0 = stopień 
                 return Temp;
             }
-            
+        
         }
         public string getTempProg(string NazwaMiasta)
         {

@@ -34,6 +34,8 @@ namespace SmartMirror
 
         public SmartMirrorApp(int id, string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
         {
+
+            NazwaMiastaLok = NazwaMiastaUzytkownika;
             InitializeComponent();  // wyołanie designera okna 
 
             List<Profil> profile = new List<Profil>();

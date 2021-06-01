@@ -45,7 +45,7 @@ namespace SmartMirror
             string Nazwa = miastoTextBox.Text;
             //System.Diagnostics.Debug.WriteLine(pogodaCheckBox.Checked);
             int id = listBox1.Items.IndexOf(listBox1.SelectedItem);
-            if (listBox1.Items.IndexOf(listBox1.SelectedItem) > -1)
+            if (listBox1.Items.IndexOf(listBox1.SelectedItem)>1)
             {
                 id = listBox1.Items.IndexOf(listBox1.SelectedItem);
             }
