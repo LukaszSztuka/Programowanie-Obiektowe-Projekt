@@ -82,7 +82,7 @@ namespace SmartMirror
         public void timer_Tick(object sender, EventArgs e)
         {
             
-            //GoogleApi();
+            GoogleApi();
             DataiGodzna aktualna = new DataiGodzna();   //Konstruktor obiektu
             
             zegarLabel.Text = aktualna.DajCzas();
@@ -170,9 +170,9 @@ namespace SmartMirror
         private void GoogleApi()
         {
             UserCredential credential;
-            System.Diagnostics.Debug.WriteLine(tokenPath);
+            //System.Diagnostics.Debug.WriteLine("credentials.json");
             using (var stream =
-                new FileStream(tokenPath, FileMode.Open, FileAccess.Read))
+                new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
             {
                 // The file token.json stores the user's access and refresh tokens, and is created
                 // automatically when the authorization flow completes for the first time.
