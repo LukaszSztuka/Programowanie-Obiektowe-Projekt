@@ -1,0 +1,22 @@
+[
+	{
+		"id":1,
+		"nazwa": "Test1",
+		"login": "test@test.pl",
+		"haslo": "testtest",
+		"pogoda": false,
+		"pogodaProg": false,
+		"zegar": false,
+		"data": false
+	},
+	{
+		"id":2,
+		"nazwa": "Test2",
+		"login": "test2@test.pl",
+		"haslo": "testtest",
+		"pogoda": true,
+		"pogodaProg": true,
+		"zegar": true,
+		"data": true
+	}
+]

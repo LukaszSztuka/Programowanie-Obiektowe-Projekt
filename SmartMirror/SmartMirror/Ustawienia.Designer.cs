@@ -41,6 +41,7 @@ namespace SmartMirror
             this.label2 = new System.Windows.Forms.Label();
             this.dodajButton = new System.Windows.Forms.Button();
             this.usunButton = new System.Windows.Forms.Button();
+            this.kalendarzCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -160,6 +161,18 @@ namespace SmartMirror
             this.usunButton.UseVisualStyleBackColor = true;
             this.usunButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usunButtonClick);
             // 
+            // kalendarzCheckBox
+            // 
+            this.kalendarzCheckBox.AutoSize = true;
+            this.kalendarzCheckBox.Checked = true;
+            this.kalendarzCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.kalendarzCheckBox.Location = new System.Drawing.Point(209, 152);
+            this.kalendarzCheckBox.Name = "kalendarzCheckBox";
+            this.kalendarzCheckBox.Size = new System.Drawing.Size(87, 19);
+            this.kalendarzCheckBox.TabIndex = 11;
+            this.kalendarzCheckBox.Text = "Wydarzenia";
+            this.kalendarzCheckBox.UseVisualStyleBackColor = true;
+            // 
             // Ustawienia
             // 
             this.AcceptButton = this.zatwierdzButton;
@@ -167,6 +180,7 @@ namespace SmartMirror
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(341, 291);
+            this.Controls.Add(this.kalendarzCheckBox);
             this.Controls.Add(this.usunButton);
             this.Controls.Add(this.dodajButton);
             this.Controls.Add(this.label2);
@@ -204,5 +218,6 @@ namespace SmartMirror
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button dodajButton;
         private System.Windows.Forms.Button usunButton;
+        private System.Windows.Forms.CheckBox kalendarzCheckBox;
     }
 }

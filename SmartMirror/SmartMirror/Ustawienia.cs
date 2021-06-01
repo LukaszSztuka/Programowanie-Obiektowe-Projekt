@@ -44,12 +44,22 @@ namespace SmartMirror
         {
             string Nazwa = miastoTextBox.Text;
             //System.Diagnostics.Debug.WriteLine(pogodaCheckBox.Checked);
+            int id = listBox1.Items.IndexOf(listBox1.SelectedItem);
+            if (listBox1.Items.IndexOf(listBox1.SelectedItem) > -1)
+            {
+                id = listBox1.Items.IndexOf(listBox1.SelectedItem);
+            }
+            else
+            {
+                id = 0;
+            }
 
-            SmartMirrorApp form1 = new SmartMirrorApp(Nazwa, new bool[]{
+            SmartMirrorApp form1 = new SmartMirrorApp(id, Nazwa, new bool[]{
                 pogodaCheckBox.Checked,
                 pogodaProgCheckBox.Checked,
                 zegarCheckBox.Checked,
-                dataCheckBox.Checked});
+                dataCheckBox.Checked,
+                kalendarzCheckBox.Checked});
 
             form1.ShowDialog();
             this.Close();
@@ -87,6 +97,7 @@ namespace SmartMirror
                 pogodaProgCheckBox.Checked = profile[idProfil].pogodaProg;
                 zegarCheckBox.Checked = profile[idProfil].zegar;
                 dataCheckBox.Checked = profile[idProfil].data;
+                kalendarzCheckBox.Checked = profile[idProfil].kalendarz;
                 Invalidate();
                 Update();
             }
@@ -119,6 +130,7 @@ namespace SmartMirror
             pogodaProgCheckBox.Checked = profile[idProfil].pogodaProg;
             zegarCheckBox.Checked = profile[idProfil].zegar;
             dataCheckBox.Checked = profile[idProfil].data;
+            kalendarzCheckBox.Checked = profile[idProfil].kalendarz;
             pogodaCheckBox.Invalidate();
             pogodaCheckBox.Update();
         }

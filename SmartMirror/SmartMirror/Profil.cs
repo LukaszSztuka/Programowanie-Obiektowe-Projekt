@@ -12,10 +12,13 @@ namespace SmartMirror
         public string nazwa { get; set; }
         public string login { get; set; }
         public string haslo { get; set; }
+
+        public string token { get; set; }
         public bool pogoda { get; set; }
         public bool pogodaProg { get; set; }
         public bool zegar { get; set; }
         public bool data { get; set; }
+        public bool kalendarz { get; set; }
 
         public override string ToString()
         {

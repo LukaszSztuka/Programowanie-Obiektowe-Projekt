@@ -15,6 +15,7 @@ using Google.Apis.Services;
 using Google.Apis.Util.Store;
 using System.IO;
 using System.Threading;
+using Newtonsoft.Json;
 
 namespace SmartMirror
 {
@@ -29,12 +30,17 @@ namespace SmartMirror
         string KopiaNazwaObrazka5 = "icon5";
         string NazwaObrazkaLok;
         string NazwaObrazkaLok2;
+        string tokenPath;
 
-        public SmartMirrorApp(string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
+        public SmartMirrorApp(int id, string NazwaMiastaUzytkownika, bool[] UstawieniaCheckBox )
         {
             InitializeComponent();  // wyołanie designera okna 
-            GoogleApi();
-            NazwaMiastaLok = NazwaMiastaUzytkownika;
+
+            List<Profil> profile = new List<Profil>();
+            string plik = File.ReadAllText("profile.json");
+
+            profile = JsonConvert.DeserializeObject<List<Profil>>(plik);
+            tokenPath = profile[id].token;
 
             if (!UstawieniaCheckBox[0])
             {
@@ -57,6 +63,13 @@ namespace SmartMirror
             {
                 dataLabel.Visible = false;
             }
+
+            if (!UstawieniaCheckBox[4])
+            {
+                Eventlabel.Visible = false;
+                GoogleApi();
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -66,7 +79,8 @@ namespace SmartMirror
 
         public void timer_Tick(object sender, EventArgs e)
         {
-            GoogleApi();
+            
+            //GoogleApi();
             DataiGodzna aktualna = new DataiGodzna();   //Konstruktor obiektu
             
             zegarLabel.Text = aktualna.DajCzas();
@@ -154,9 +168,9 @@ namespace SmartMirror
         private void GoogleApi()
         {
             UserCredential credential;
-
+            System.Diagnostics.Debug.WriteLine(tokenPath);
             using (var stream =
-                new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
+                new FileStream(tokenPath, FileMode.Open, FileAccess.Read))
             {
                 // The file token.json stores the user's access and refresh tokens, and is created
                 // automatically when the authorization flow completes for the first time.

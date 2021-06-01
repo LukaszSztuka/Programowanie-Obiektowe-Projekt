@@ -12,6 +12,7 @@ namespace SmartMirror
 {
     public partial class DodajProfil : Form
     {
+        string plikToken;
         public DodajProfil()
         {
             InitializeComponent();
@@ -51,8 +52,8 @@ namespace SmartMirror
 
            nowy.id = profile.Count + 1;
            nowy.nazwa = nazwaTextBox.Text;
-           nowy.login = loginTextBox.Text;
-           nowy.haslo = hasloTextBox.Text;
+           nowy.token = nowy.nazwa + "_token.json";
+           nowy.kalendarz = kalendarzCheckBox.Checked;
            nowy.pogoda = pogodaCheckBox.Checked;
            nowy.pogodaProg = pogodaProgCheckBox.Checked;
            nowy.zegar = zegarCheckBox.Checked;
@@ -61,10 +62,38 @@ namespace SmartMirror
 
            plik = JsonConvert.SerializeObject(profile);
            File.WriteAllText("profile.json", plik);
+           File.WriteAllText(nowy.token, plikToken);
 
            Ustawienia ust = new Ustawienia();
            ust.Refresh();
            this.Close();
+        }
+
+        private void dodajTokenClick(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.CheckFileExists = true;
+            openFileDialog.AddExtension = true;
+            openFileDialog.Multiselect = true;
+            //openFileDialog.Filter = "Json files (*.json)|*.json|Text files (*.txt)|*.txt";
+            openFileDialog.ToString();
+
+            
+
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string path = System.IO.Path.GetFullPath(openFileDialog.FileName);
+                label2.Text = path;
+
+                
+
+                using (StreamReader p = new StreamReader(openFileDialog.OpenFile()))
+                {
+                    plikToken = p.ReadToEnd();
+                }
+            }
+            System.Diagnostics.Debug.WriteLine(plikToken);
+
         }
     }
 }
