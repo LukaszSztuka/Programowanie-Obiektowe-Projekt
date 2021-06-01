@@ -76,6 +76,7 @@ namespace SmartMirror
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer_Tick(null, null);
             timer.Start();
         }
 
@@ -197,7 +198,7 @@ namespace SmartMirror
             request.TimeMin = DateTime.Now;
             request.ShowDeleted = false;
             request.SingleEvents = true;
-            request.MaxResults = 10;
+            request.MaxResults = 3;
             request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
 
             // List events.

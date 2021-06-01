@@ -60,7 +60,7 @@ namespace SmartMirror
             // 
             // timer
             // 
-            this.timer.Interval = 10000;
+            this.timer.Interval = 60000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // dataLabel
