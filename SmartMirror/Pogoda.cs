@@ -14,7 +14,7 @@ namespace SmartMirror
 {
     public class Pogoda 
     {
-        const string APPID = "Tu uzupełnić"; // ID z openweathermap.org
+        const string APPID = ""; // ID z openweathermap.org
         public string Temp;
         public string NazwaObrazka;
                
