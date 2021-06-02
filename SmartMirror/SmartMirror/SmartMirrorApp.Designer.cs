@@ -134,7 +134,7 @@ namespace SmartMirror
             this.Etykietalabel.Name = "Etykietalabel";
             this.Etykietalabel.Size = new System.Drawing.Size(259, 30);
             this.Etykietalabel.TabIndex = 6;
-            this.Etykietalabel.Text = "Nadchodzące wydarzenia";
+            this.Etykietalabel.Text = "Nadchodzące wydarzenia:";
             // 
             // Eventlabel
             // 
