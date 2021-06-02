@@ -1,13 +1,6 @@
 ﻿using System;                       //dyrektywy (wszystkie przestrzenie nazw których używamy) 
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Calendar.v3;
 using Google.Apis.Calendar.v3.Data;
@@ -17,7 +10,7 @@ using System.IO;
 using System.Threading;
 using Newtonsoft.Json;
 
-namespace SmartMirror
+namespace SmartMirror           //Wymaga uzupełnienia ID api pogodowego oraz pliku credentials.json w folderze SmartMirror\bin\Debug\netcoreapp3.1
 {
     public partial class SmartMirrorApp : Form
     {

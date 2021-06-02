@@ -105,7 +105,6 @@ namespace SmartMirror
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 11;
             this.label1.Text = "Nazwa";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dodajButton
             // 
@@ -173,7 +172,6 @@ namespace SmartMirror
         #endregion
 
         private System.Windows.Forms.TextBox nazwaTextBox;
-        private System.Windows.Forms.TextBox haslo;
         public System.Windows.Forms.CheckBox pogodaProgCheckBox;
         private System.Windows.Forms.CheckBox dataCheckBox;
         private System.Windows.Forms.CheckBox zegarCheckBox;

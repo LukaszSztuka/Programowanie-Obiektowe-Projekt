@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KQ1mNIZCfeiSWS1vYtztn/nne1V4RzGXWHkyvE1YvN5aUsY6Om4kYlQ0d8NFc+/0JzwkTqRmr2O2HI+Hi6ynSQ==",
+  "dgSpecHash": "/u78cQn2H9SeuyvVEk8ZMZzEeU4nwU5FQxEt3uIWeLr1nssaPXDsjNNjPWenfqrcPtCPiS4p3y+UOHg5GPV5HA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+  "projectFilePath": "E:\\Studia\\S08 (06)\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DESKTOP-12\\.nuget\\packages\\google.apis\\1.51.0\\google.apis.1.51.0.nupkg.sha512",
     "C:\\Users\\DESKTOP-12\\.nuget\\packages\\google.apis.auth\\1.51.0\\google.apis.auth.1.51.0.nupkg.sha512",

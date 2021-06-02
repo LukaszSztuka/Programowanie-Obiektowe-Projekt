@@ -52,7 +52,6 @@ namespace SmartMirror
             this.label1.Size = new System.Drawing.Size(114, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Podaj nazwę miasta:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // miastoTextBox
             // 
@@ -139,7 +138,6 @@ namespace SmartMirror
             this.label2.Size = new System.Drawing.Size(83, 15);
             this.label2.TabIndex = 8;
             this.label2.Text = "Wybierz profil:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // dodajButton
             // 

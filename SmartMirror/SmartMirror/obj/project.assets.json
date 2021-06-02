@@ -204,11 +204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+      "projectUniqueName": "E:\\Studia\\S08 (06)\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
       "projectName": "SmartMirror",
-      "projectPath": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
+      "projectPath": "E:\\Studia\\S08 (06)\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\SmartMirror.csproj",
       "packagesPath": "C:\\Users\\DESKTOP-12\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DESKTOP-12\\Source\\Repos\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\obj\\",
+      "outputPath": "E:\\Studia\\S08 (06)\\Programowanie-Obiektowe-Projekt\\SmartMirror\\SmartMirror\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DESKTOP-12\\AppData\\Roaming\\NuGet\\NuGet.Config",

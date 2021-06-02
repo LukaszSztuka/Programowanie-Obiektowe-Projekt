@@ -169,3 +169,28 @@ C:\Users\Kuba\Source\Repos\SmartMirror_Projekt\SmartMirror\SmartMirror\obj\Debug
 C:\Users\Kuba\Source\Repos\SmartMirror_Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.dll
 C:\Users\Kuba\Source\Repos\SmartMirror_Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.pdb
 C:\Users\Kuba\Source\Repos\SmartMirror_Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.genruntimeconfig.cache
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.exe
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.deps.json
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.json
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.runtimeconfig.dev.json
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\SmartMirror.pdb
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Calendar.v3.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csprojAssemblyReference.cache
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.DodajProfil.resources
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Properties.Resources.resources
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.SmartMirrorApp.resources
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.Ustawienia.resources
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.GenerateResource.cache
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfoInputs.cache
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.AssemblyInfo.cs
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CoreCompileInputs.cache
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.csproj.CopyComplete
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.dll
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.pdb
+E:\Studia\S08 (06)\Programowanie-Obiektowe-Projekt\SmartMirror\SmartMirror\obj\Debug\netcoreapp3.1\SmartMirror.genruntimeconfig.cache

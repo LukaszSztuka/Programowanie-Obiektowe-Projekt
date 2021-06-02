@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
@@ -29,16 +25,7 @@ namespace SmartMirror
                 dodajButton.Enabled = false;
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+               
 
         private void dodajButtonClick(object sender, EventArgs e)
         {
@@ -77,16 +64,12 @@ namespace SmartMirror
             openFileDialog.Multiselect = true;
             //openFileDialog.Filter = "Json files (*.json)|*.json|Text files (*.txt)|*.txt";
             openFileDialog.ToString();
-
-            
-
+                 
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string path = System.IO.Path.GetFullPath(openFileDialog.FileName);
                 label2.Text = path;
-
                 
-
                 using (StreamReader p = new StreamReader(openFileDialog.OpenFile()))
                 {
                     plikToken = p.ReadToEnd();

@@ -12,9 +12,9 @@ using Newtonsoft.Json;
 
 namespace SmartMirror
 {
-    public class Pogoda
+    public class Pogoda 
     {
-        const string APPID = "846aad33c8c01e7f1baae5e467b7c21f";
+        const string APPID = "Tu uzupełnić"; // ID z openweathermap.org
         public string Temp;
         public string NazwaObrazka;
                
